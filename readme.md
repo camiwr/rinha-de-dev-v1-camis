@@ -61,7 +61,7 @@ Eu não tenho um servidor da NASA. O hardware é curto para ver quem sabe otimiz
 
 ## O que você precisa entregar?
 
-Para entrar na arena, abra uma nova issue no repositório e cole o link do seu vendedor de ingressos, seu repo deve ter:
+Para entrar na arena, abra uma nova issue no repositório e cole o link do seu vendedor de ingressos, prazo limite de entrega 20 de fevereiro, seu repo deve ter:
 
 - **O Código:** na linguagem que você domina (ou naquela que você diz que sabe no LinkedIn kkkk).
 - **Dockerfile:** sua aplicação deve subir e ouvir na porta `8080`.
