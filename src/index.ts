@@ -1,9 +1,15 @@
 import Fastify from 'fastify'
+import { pool } from './db'
+import { routes } from './routes'
+
+
 
 const app = Fastify({
   logger: false,
   disableRequestLogging: true,
 })
+
+app.register(routes)
 
 app.get('/health', async (_req, reply) => {
   return reply.code(200).send({ status: 'ok' })
@@ -11,6 +17,7 @@ app.get('/health', async (_req, reply) => {
 
 const shutdown = async () => {
   await app.close()
+  await pool.end()
   process.exit(0)
 }
 
